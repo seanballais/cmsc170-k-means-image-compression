@@ -34,7 +34,6 @@ def main(output_dir, start_image_index, num_images,
                 input_filename, output_filename, str(k), str(max_iters)
             ]
             process = subprocess.Popen(command)
-            process.wait()
             running_processes.append(process)
 
 
