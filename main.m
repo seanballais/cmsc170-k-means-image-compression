@@ -2,11 +2,11 @@
 arg_list = argv();
 input_image_filename = arg_list(1){1};
 output_image_filename = arg_list(2){1};
-K = arg_list(3){1};
-max_iters = arg_list(4){1};
+K = str2num(arg_list(3){1});
+max_iters = str2num(arg_list(4){1});
 
 %% Apply K-means to compress the image.
-A = double(imread(image_filename));
+A = double(imread(input_image_filename));
 A = A / 255; % Put the pixel values into the range [0 - 1].
 img_size = size(A);
 
