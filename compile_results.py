@@ -66,7 +66,7 @@ def main(num_images, margin, img_padding):
 
             result_idx += 1
 
-        compiled_img.show()
+        compiled_img.save('test_results/compilations/{}.png'.format(i))
 
 
 
